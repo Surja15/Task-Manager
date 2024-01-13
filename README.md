@@ -1,16 +1,34 @@
-# todotute
+# Task Manager
 
-A new Flutter project.
+Welcome to my Task Manager App! This project is made by Surja Sekhar Sengupta, its a task manager / to do based on Flutter using Hive.
+
+## Licensing
+
+This project is licensed under the [GNU General Public License v3.0](LICENSE).
+
+**You are free to:**
+
+- Share: Copy and redistribute the material in any medium or format.
+- Adapt: Remix, transform, and build upon the material for any purpose, even commercially.
+
+**Under the following terms:**
+
+- Attribution: You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+- Non-Commercial: You may not use the material for commercial purposes without obtaining the licensor's permission.
+
+Read the full [GNU General Public License v3.0](LICENSE) for more details.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with this project, follow these steps:
 
-A few resources to get you started if this is your first Flutter project:
+1. Clone the repository.
+2. Install dependencies.
+3. Run the project.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Here's how you can use this project:
+
+```bash
+$ command-to-run-project
