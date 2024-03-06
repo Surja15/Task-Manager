@@ -18,7 +18,7 @@ class ToDoTile extends StatelessWidget {
       child: Slidable(
         endActionPane: ActionPane(motion: StretchMotion(), children: [SlidableAction(onPressed: deleteFunction,
         icon: Icons.delete,
-        backgroundColor:Color.fromARGB(255, 3, 153, 115),
+        backgroundColor:Color.fromARGB(255, 211, 14, 0),
         borderRadius: BorderRadius.circular(12),)]),
        
         child: Container( 
@@ -28,10 +28,14 @@ class ToDoTile extends StatelessWidget {
               //checkbox
               Checkbox(value: taskCompleted, onChanged: onChanged, activeColor: Colors.black,),
               //task name
-              Text(taskName, style: TextStyle(decoration:taskCompleted ? TextDecoration.lineThrough : TextDecoration.none),),
+              Text(taskName, style: TextStyle(
+                decoration:taskCompleted ? TextDecoration.lineThrough : TextDecoration.none,   color: Colors.white, 
+      fontFamily: 'Roboto',),
+                
+                ),
             ],
           ),
-          decoration: BoxDecoration(color:Color.fromARGB(255, 72, 248, 219),
+          decoration: BoxDecoration(color:Color.fromARGB(255, 100, 100, 100),
           borderRadius: BorderRadius.circular(12)
           ) ,
           

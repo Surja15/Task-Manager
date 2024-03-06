@@ -10,7 +10,7 @@ class DialogBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-       backgroundColor: Color.fromARGB(255, 30, 247, 211),
+       backgroundColor: Color.fromARGB(255, 100, 100, 100),
       content: Container(height:120,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -18,21 +18,28 @@ class DialogBox extends StatelessWidget {
         //get user input
         TextField(
           controller: controller,
-          decoration: InputDecoration(border:OutlineInputBorder(),
-          hintText:"Add a new task",),
+          style: TextStyle(color: Colors.white),
+          decoration: InputDecoration(border:OutlineInputBorder(borderRadius: BorderRadius.circular(15.0)),
+          hintText:"add a task",hintStyle: TextStyle(color: Colors.grey),),
         ),
         //save button cancel button
 Row(
   mainAxisAlignment: MainAxisAlignment.end,
   children:[
-
-    //save
-    MyButton(text: "Save", onPressed: onSave),
+    // Save button
+    ClipRRect(
+      borderRadius: BorderRadius.circular(8.0), // Adjust the radius as needed
+      child: MyButton(text: "Save", onPressed: onSave),
+    ),
 
     const SizedBox(width:7),
-    //cancel
-    MyButton(text: "Cancel", onPressed: onCancel)
-  ]
+
+    // Cancel button
+    ClipRRect(
+      borderRadius: BorderRadius.circular(8.0), // Adjust the radius as needed
+      child: MyButton(text: "Cancel", onPressed: onCancel),
+    ),
+  ],
 )
       ],))
      

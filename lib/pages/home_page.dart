@@ -82,16 +82,26 @@ void deleteTask(int index)
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 161, 255, 239),
+      backgroundColor: Color.fromARGB(255, 58, 58, 58),
       appBar: AppBar(
-       centerTitle: true, title: Text('Task Manager - Surja'),
-       elevation: 0,
-       backgroundColor: Color.fromARGB(255, 39, 255, 226),
+  title: Text(
+    'Task Manager',
+    style: TextStyle(
+      color: Colors.white, 
+      fontFamily: 'Roboto', 
+      fontSize: 20, 
+      fontWeight: FontWeight.bold,
+    ),
+  ),
+  elevation: 0,
+  backgroundColor: Color.fromARGB(255, 58, 58, 58),
+),
 
-      ),
       floatingActionButton: FloatingActionButton(onPressed: createNewTask,
       
-      child: Icon(Icons.add),backgroundColor: Colors.teal,),
+      child: Icon(Icons.edit, color: Colors.white),
+      backgroundColor: Color.fromARGB(255, 105, 105, 105),
+       shape: CircleBorder(),),
       
       body: ListView.builder(itemCount: db.toDoList.length, itemBuilder: (context, index) {
         return ToDoTile(
